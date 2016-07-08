@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+    <header>
+        <div id="home">
+            <p>WELCOME TO MY BLOG</p>
+            <nav>
+                <ul id="index_nav">
+                    <li><a href="#categories"><span class="glyphicon glyphicon-home"></span> 文章</a></li>
+                    <li><a href="http://Lance608554.github.io//pages/workers/"><span class="glyphicon glyphicon-send"></span> 小作品</a></li>
+                    <li><a href="http://Lance608554.github.io//pages/Online_resume/"><span class="glyphicon glyphicon-user"></span> 简历</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="main" class="container">
+      {{ content }}
+    </div>
+     <!--回到顶部-->
+    <div id="top" data-toggle="tooltip" data-placement="left" title="回到顶部">
+        <a href="javascript:;">
+            <div class="arrow"></div>
+            <div class="stick"></div>
+        </a>
+    </div>
+    {% include footer.html %}
+</body>
+</html>

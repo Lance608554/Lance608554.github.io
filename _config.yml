@@ -1,0 +1,17 @@
+# site settings
+title: 曾昕延
+author: 曾昕延
+email: mr.zxy123@qq.com
+description: 曾昕延的博客
+github_username: Lance608554
+permalink: /:year/:month/:day/:title/
+baseurl: https://Lance608554.github.io
+github: https://github.com/Lance608554
+
+# Build settings
+markdown: kramdown
+gems: [jekyll-paginate]
+
+# Page setting
+paginate: 10
+paginate_path: "page:num"

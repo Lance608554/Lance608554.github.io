@@ -1,0 +1,243 @@
+
+/* index.html */
+/* header */
+#home {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url("http://o9r9kpwmc.bkt.clouddn.com/blog/onload.png") no-repeat;
+}
+
+#home p {
+    font-size: 4em;
+    color: rgba(255,255,255,0.7);
+    position: absolute;
+    left: 25.6%;
+    top: 25%;
+}
+@media (max-width:991px) {
+    #home {
+        height: 250px;
+        background-size: auto 250px;
+    }
+    #home p {
+        font-size: 2em;
+        left: 10%;
+    }
+}
+#index_nav {
+    list-style-type: none;
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    top: 50%;
+}
+#index_nav li {
+    display: inline-block;
+    margin: 0.5em;
+    padding:0.5em 1em 0.5em 1em;
+    background-color: rgba(111,173,249,0.3);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#index_nav li a {
+    font-size: 1.5em;
+    color: white;
+}
+@media (max-width:991px){
+    #index_nav li {
+        padding:0.5em;
+    }
+    #index_nav li a {
+        font-size: 1em;
+    }
+}
+/* categories */
+#categories {
+    padding: 2em 4em 0 5em;
+}
+
+#categories .categories-header{
+    border-bottom: 2px solid gray;
+    padding:8px 18px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#categories .categories-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+#categories .categories-item{
+    width: 100%;
+    font-size: 1.2em;
+    color: rgba(40,40,40,0.8);
+    padding:8px 18px;
+    border-bottom:1px solid gray;
+}
+
+#categories .categories-item .my-badge{
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #999;
+    padding: 0 7px 1px 7px;
+    float: right;
+    border-radius: 9px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+}
+
+/* post area */
+#post .post-header{
+    padding: 15px 30px;
+    border-bottom: 2px solid #c0c0c0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#post .post-item{
+    display: block;
+    padding:8px 30px 10px 30px;
+    border-bottom:1px solid #aaa;
+}
+
+#post .post-item a:hover {
+    text-decoration: none;
+}
+
+/* article area*/
+#article_summary {
+    padding: 10px;
+    margin-right: 1em;
+    background-color: rgba(240,240,240,0.9);
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+#my_article {
+    padding-right: 2em;
+}
+
+
+/* footer */
+footer{
+    min-height: 50px;;
+    padding: 1em;
+    text-align: center;
+    background: url("../static/picture/footer.png") repeat-x;
+}
+
+/**
+ * workers
+ * 瀑布流
+ * 使用多栏布局
+ */
+#fall{
+    font-size: 0;
+    text-align: center;
+}
+#fall ul{
+    margin: 0 10px;
+    padding: 0;
+    width: 240px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 1200px) {
+    #fall ul{
+        width: 210px;
+    }
+}
+@media screen and (max-width: 991px){
+    #fall ul{
+        width: auto;
+    }
+}
+#fall li{
+    margin: 0 0 20px 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 14px;
+
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.6),0 0 20px rgba(0,0,0,0.1) inset;
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.6),0 0 20px rgba(0,0,0,0.1) inset;
+    -o-box-shadow: 0 0 5px rgba(0,0,0,0.6),0 0 20px rgba(0,0,0,0.1) inset;
+    box-shadow: 0 0 5px rgba(0,0,0,0.6),0 0 20px rgba(0,0,0,0.1) inset;
+
+    transition:0.1s ease-out;
+    -webkit-transition:0.1s ease-out;
+    -moz-transition:0.1s ease-out;
+    -o-transition:0.1s ease-out;
+}
+#fall li:hover{
+    -webkit-box-shadow: 0 0 12px rgba(0,0,0,0.8),0 0 20px rgba(0,0,0,0.1) inset;
+    -moz-box-shadow: 0 0 12px rgba(0,0,0,0.8),0 0 20px rgba(0,0,0,0.1) inset;
+    -o-box-shadow: 0 0 12px rgba(0,0,0,0.8),0 0 20px rgba(0,0,0,0.1) inset;
+    box-shadow: 0 0 12px rgba(0,0,0,0.8),0 0 20px rgba(0,0,0,0.1) inset;
+
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+#fall li p{
+    margin: 0;
+}
+#fall .head{
+    font-size: 16px;
+    text-align: left;
+    margin: 0 10px;
+    padding: 10px 0 5px 0;
+    border-bottom: 1px dotted #ddd;
+    font-weight: bold;
+}
+#fall .description{
+    text-align: left;
+    padding: 5px 10px 10px 10px;
+    text-indent: 2em;
+}
+#fall a:link {color: #7676AC}		/* 未访问的链接 */
+#fall a:visited {color: #715584}	/* 已访问的链接 */
+#fall a:hover {color: #5989AD;text-decoration: none;}	/* 鼠标移动到链接上 */
+#fall a:active {color: #91C3CF}	/* 选定的链接 */
+
+
+/* move to top */
+#top {
+    position: fixed;
+    right: 25px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #bbb;
+    border-radius:7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    opacity: 0.8;
+    display: none;
+    z-index: 888;
+}
+#top .arrow{
+    margin:0 auto;
+    padding-top:11px;
+    width:0;
+    height: 0;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid #7f7f7f;
+
+}
+#top .stick{
+    margin:0 auto;
+    padding-bottom:21px;
+    width: 13px;
+    border-bottom: 13px solid #bbb;
+    background-color: #7f7f7f;
+}
