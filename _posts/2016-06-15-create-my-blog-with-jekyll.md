@@ -17,7 +17,7 @@ categories: jekyll
 3. 传送门：[jekyll中文官网网站](http://jekyllcn.com/)  \|  [jekyll博客模板](http://jekyllthemes.org/)
 
 >  当时找了很多模板，都不是很满意（逼格太高啦····简洁成白纸了卧槽····老外写的好抽象orz····），所以如果有能力当然自己写一个最好啦！
->  嗯····所以如果你中意我····做的的博客话，欢迎来fork。仓库再此：[曾昕延的博客](https://github.com/Lance608554/Lance608554.github.io)
+>  嗯····所以如果你中意我····做的的博客话，欢迎来fork。仓库在此：[曾昕延的博客](https://github.com/Lance608554/Lance608554.github.io)
 
 ---
 
